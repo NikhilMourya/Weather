@@ -1,0 +1,45 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito',sans-serif;
+}
+.input{
+    text-align: center;
+    background-color: black;
+    padding: 5rem;
+}
+input[type="text"]{
+    height: 50px;
+    width: 600px;
+    background-color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+}
+input[type="submit"]{
+    height: 50px;
+    width: 100px;
+    background-color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+}
+.display{
+    text-align: center;
+    background-color: #130140;
+    color: aliceblue;
+    padding:20px;
+}
+.display h1{
+    padding:20px;
+}
+.display p{
+    padding:20px;
+    text-transform: capitalize;
+}
