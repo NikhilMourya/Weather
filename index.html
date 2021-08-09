@@ -25,8 +25,21 @@
         <h1 class="name"></h1>
         <p class="desc"></p>
         <p class="temp"></p>
+        <div class="basic">
+            <!-- <p id="date"></p> -->
+            <p>your ip address: </p>
+            <p id="gfg"></p>
+        </div>
     </div>
     <script src="index.js"></script>
+    <script>
+        $.getJSON("https://api.ipify.org?format=json",
+            function (data) {
+
+                // Setting text of element P with id gfg
+                $("#gfg").html(data.ip);
+            })
+    </script>
 </body>
 
 </html>
