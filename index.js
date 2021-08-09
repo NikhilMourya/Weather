@@ -19,6 +19,7 @@ button.addEventListener('click',function(){
         var h="haze";
         var oc="overcast clouds";
         var m="mist";
+        var bc="broken clouds"
         if(descvalue===h){
            // document.querySelector('.status').innerHTML="hello";
            document.querySelector('.status').innerHTML='<i class="fas fa-sun-haze fa-2x"></i>';
@@ -29,7 +30,9 @@ button.addEventListener('click',function(){
         if(descvalue===m){
             document.querySelector('.status').innerHTML='<i class="fas fa-fog fa-2x"></i>';
         }
-
+        if(descvalue===bc){
+            document.querySelector('.status').innerHTML='<i class="far fa-smoke fa-2x"></i>';
+        }
         //document.querySelector('.status').innerHTML=
     })
 .catch(Err => alert("Wrong city name"));
