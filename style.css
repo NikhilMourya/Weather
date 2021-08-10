@@ -89,7 +89,6 @@ input[type="submit"]{
         border: none;
         border-radius: 2px;
         margin-top: 20px;
-        margin:10px;
     }
     body{
         background-image: url("images/mountains_fogmobile.jpg");
@@ -99,5 +98,7 @@ input[type="submit"]{
         text-align: center;
         color: aliceblue;
         padding:5px;
+        margin-top:10px;
+        margin:auto;
     }
 }
