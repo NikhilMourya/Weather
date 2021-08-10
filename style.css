@@ -2,11 +2,14 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 body{
     font-family: 'Nunito',sans-serif;
     background-image: url("images/mountains_fog1.jpg");
+    background-color: black;
     background-size: cover;
+    transition-delay: 200ms;
 }
 .input{
     text-align: center;
@@ -34,6 +37,26 @@ input[type="submit"]{
     margin: 30px;
 }
 .display{
+    background-color: black ;
+    width: 40%;
+    margin: auto;
+    border: 5px;
+    border-radius: 5px;
+    opacity: 0.75;
+}
+.fad.fa-sun{
+    color: #ff9705;
+}
+.fa-sun-haze{
+    color: #05c5ff;
+}
+.fa-cloud-rain{
+    color:#0586ff;
+}
+.fas.fa-fog{
+ color:#a6a6a6;
+}
+.content{
     text-align: center;
     color: aliceblue;
     padding:10px;
@@ -69,6 +92,7 @@ input[type="submit"]{
     }
     body{
         background-image: url("images/mountains_fogmobile.jpg");
+        font-size: 10px;
     }
     .display{
         text-align: center;
