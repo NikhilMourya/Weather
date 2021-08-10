@@ -101,4 +101,8 @@ input[type="submit"]{
         margin-top:10px;
         margin:auto;
     }
+    .display p{
+    padding:8px;
+    
+}
 }
