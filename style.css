@@ -1,19 +1,28 @@
+
 *{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'ubuntu',sans-serif;
 }
 body{
-    font-family: 'Nunito',sans-serif;
-    background-color: black;
+    background-image: url(./images/wide-forest.jpg);
+    background-position: center;
     background-size: cover;
-    transition-delay: 200ms;
+    background-repeat: no-repeat;
+}
+.row{
+    color: antiquewhite;
+}
+.basic h1,h3{
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+}
+.wind-info{
+    padding-top: 100px;
 }
 .input{
     text-align: center;
     padding: 5rem;
-    
 }
 input[type="text"]{
     height: 50px;
@@ -35,39 +44,17 @@ input[type="submit"]{
     border-radius: 2px;
     margin: 30px;
 }
-.display{
-    background-color: black ;
-    width: 40%;
-    margin: auto;
+.basic-left{
+    border-radius: 30px;
+    border-style: dashed;
+}
+.basic-right{
+    border-radius: 30px;
+    border-style: dashed;
+}
+.basic{
     border: 5px;
-    border-radius: 5px;
-    opacity: 0.75;
 }
-.fad.fa-sun{
-    color: #ff9705;
-}
-.fa-sun-haze{
-    color: #05c5ff;
-}
-.fa-cloud-rain{
-    color:#0586ff;
-}
-.fas.fa-fog{
- color:#a6a6a6;
-}
-.content{
-    text-align: center;
-    color: aliceblue;
-    padding:10px;
-}
-.display h1{
-    padding:10px;
-}
-.display p{
-    padding:20px;
-    text-transform: capitalize;
-}
-
 @media(max-width:500px){
     input[type="text"]{
         height: 30px;
@@ -90,12 +77,6 @@ input[type="submit"]{
         margin-top: 20px;
     }
     body{
-        font-size: 10px;
-        background-size: cover;
-    }
-    .display{
-        text-align: center;
-        color: aliceblue;
-        margin-bottom: 10rem;
+        background-image: url(./images/forest.jpg);
     }
 }
