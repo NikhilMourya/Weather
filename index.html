@@ -18,8 +18,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -27,23 +33,61 @@
         <input type="text" class="inputvalue" placeholder="Enter the city name...">
         <input type="submit" value="Submit" class="button">
     </div>
-    <div class="display">
-        <div class="content">
-            <h1 class="name"></h1>
-            <p class="desc"></p>
-            <h1 class="status"></h1>
-            <p class="temp"></p>
-            <object type="image/svg+xml" data="/images/wind.svg">
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-lg-6 col-md-6 sol-sm-12 basic p-3">
+                <h1 class="name"></h1>
+                <h3 class="country-name"></h3>
+                <h1 class="status"></h1>
+                <p class="temp"></p>
+                <p class="weather-icon"></p>
+                <h4 class="desc"></h4>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 extra p-3">
+                <div class="row">
+                    <div class="col-6">
+                        <h7>Sunrise</h7>
+                        <i class="fas fa-sunrise fa-2x" style="color: #f9d71c;"></i>
+                        <h5 class="sunrise"></h5>
+                    </div>
+                    <div class="col-6">
+                        <h7>Sunset</h7>
+                        <i class="fas fa-sunset fa-2x" style="color:  	#ff4d00;"></i>
+                        <h5 class="sunset"></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <object type="image/svg+xml" data="/images/wind.svg">
+                </object>
                 
-            </object>
-            <div class="basic">
-                <p id="date_time"></p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 wind-info">
+                <span>Humidity</span>
+                <p class="humidity"></p>
+                <span>Wind Speed</span>
+                <p class="wind-speed"></p>
+                <span>Pressure</span>
+                <p class="wind-pressure"></p>
+            </div>
+            <hr>
+            <div>
                 <p>your ip address: <span>
-                        <p id="gfg"></p>
-                    </span></p>
+                    <p id="gfg"></p>
+                </span></p>
+            <p id="date_time"></p>
             </div>
         </div>
     </div>
     <script src="index.js"></script>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
 </html>
